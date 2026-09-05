@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Jarvis</string>
+    <string name="listening">Listening…</string>
+    <string name="thinking">Thinking…</string>
+    <string name="speaking">Speaking…</string>
+    <string name="idle">Tap or say "Hey Jarvis"</string>
+    <string name="mic_permission_rationale">Jarvis needs microphone access to hear your voice commands. Nothing is recorded unless you tap the mic or use the wake phrase.</string>
+</resources>
