@@ -75,7 +75,7 @@ class CommandExecutor(private val context: Context) {
 
     private fun openApp(appName: String): ExecutionResult {
         val pm = context.packageManager
-        val apps = pm.getInstalledApplications(PackageManager.ApplicationInfo::class.java.let { 0 })
+        val apps = pm.getInstalledApplications(PackageManager.GET_META_DATA)
         val match = apps.firstOrNull {
             pm.getApplicationLabel(it).toString().contains(appName, ignoreCase = true)
         } ?: return ExecutionResult("I couldn't find an app called $appName.", success = false)
